@@ -1,0 +1,108 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(42deg, rgb(11, 30, 43)50%, rgb(208, 210, 187) 50%, rgb(208, 210, 187) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    height: 400px;
+    width: 400px;
+    background-color: #cec496;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    box-shadow: 10px 8px 16px 10px rgba(0, 0, 0, 0.2),
+        10px 12px 40px 10px rgba(0, 0, 0, 0.19);
+    padding: 0 20px;
+}
+
+.result-container {
+    background-color: rgba(255, 255, 255, 0.74);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    height: 50px;
+    width: 100%;
+
+    border: 1px dotted rgb(19, 14, 14);
+}
+
+.result-container #result {
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
+}
+
+.result-container .btn {
+    font-size: 16px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.btn {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: rgb(0, 0, 0);
+}
+
+.generate {
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px 12px;
+    background: rgb(11, 30, 43);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.generate:hover {
+    background: linear-gradient(45deg, rgb(209, 155, 73)50%, rgb(11, 30, 43) 50%, rgb(11, 30, 43) 100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-large {
+    display: block;
+    width: 100%;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.includes {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    padding: 10px 0px;
+}
+
+input[type=number] {
+    width: 50px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
